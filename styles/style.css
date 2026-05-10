@@ -1,0 +1,23 @@
+body {
+  background: #0a0a14;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background: linear-gradient(90deg, #ff004c, #ff7b00);
+  padding: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.panel {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
