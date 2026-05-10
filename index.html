@@ -1,40 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Volcano City: Cops vs Criminals</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-<body>
-  <div id="app">
-    <header class="top-bar">
-      <h1>Volcano City: Cops vs Criminals</h1>
-      <p class="subtitle">Tasers only. Escapes forever.</p>
-    </header>
+<html>
+  <head>
+    <title>Open World Drive</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <h1>Open World Drive</h1>
+    <p id="world"></p>
 
-    <main class="layout">
-      <section class="panel" id="world-panel">
-        <h2>World Overview</h2>
-        <div id="world-summary"></div>
-      </section>
+    <h2>Multiplayer</h2>
+    <div id="multiplayer">
+      <div>
+        <h3>Create a game</h3>
+        <button id="create-game-btn">Create Game Code</button>
+        <p>Your game code: <span id="game-code">---</span></p>
+      </div>
 
-      <section class="panel" id="heists-panel">
-        <h2>Heists</h2>
-        <ul id="heist-list"></ul>
-      </section>
+      <div style="margin-top: 10px;">
+        <h3>Join a game</h3>
+        <input id="join-code-input" placeholder="Enter game code">
+        <button id="join-game-btn">Join</button>
+        <p id="join-status"></p>
+      </div>
+    </div>
 
-      <section class="panel" id="vehicles-panel">
-        <h2>Vehicles</h2>
-        <ul id="vehicle-list"></ul>
-      </section>
-    </main>
+    <h2>Locations</h2>
+    <ul id="locations"></ul>
 
-    <footer class="footer">
-      <span>Design by Raymond • Prototype build</span>
-    </footer>
-  </div>
+    <h2>Vehicles</h2>
+    <ul id="vehicles"></ul>
 
-  <script type="module" src="src/main.js"></script>
-</body>
+    <h2>Bots</h2>
+    <ul id="bots"></ul>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>
